@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutualan Kuy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Instagram List</h1>
+        <div class="form-container">
+            <label for="link">Link:</label>
+            <input type="text" id="link" placeholder="Add Url Instagram">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Add Username Instagram">
+            <button onclick="addEntry()">Add List</button>
+        </div>
+        <table>
+            <thead>
+            <h2>Tap kolom username untuk melihat profil</h2>
+                <tr>
+                    <th>No</th>
+                    <th>Username</th>
+                    <th>Edit</th>
+                </tr>
+            </thead>
+            <tbody id="instagram-list">
+                <!-- Entries will be added here dynamically -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
